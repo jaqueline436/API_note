@@ -1,8 +1,8 @@
 const express = require('express');
-const clientes = require("./routes/clientes")
-const vendedores = require("./routes/vendedores")
-const produtos = require("./routes/produtos")
-const movimentacoes = require("./routes/movimentacoes")
+const clientes = require("../routes/clientes")
+const vendedores = require("../routes/vendedores")
+const produtos = require("../routes/produtos")
+const movimentacoes = require("../routes/movimentacoes")
 
 
 
@@ -12,7 +12,6 @@ app.use(express.json())
 app.use("/clientes", clientes)
 app.use("/vendedores", vendedores)
 app.use("/produtos", produtos)
-const movimentacoes = require("./routes/movimentacoes")
 
 
 app.get("/", (req, res) =>  {
